@@ -13,13 +13,11 @@ programs.bash  = {
         fastfetch
       ";
     shellAliases = {
-      nixc="sudo nvim /etc/nixos/configuration.nix && sudo nixos-rebuild switch";
+      nixc="sudo nvim /home/sam/.config/nix/configuration.nix && sudo nixos-rebuild switch --flake /home/sam/.config/nix";
 
-      nixf="sudo nvim /etc/nixos/flake.nix && sudo nixos-rebuild switch";
+      nixf="sudo nvim /home/sam/.config/nix/flake.nix && sudo nixos-rebuild switch --flake /home/sam/.config/nix";
 
-      nixh="sudo nvim /etc/nixos/home.nix && sudo nixos-rebuild switch";
-
-      rebuild="sudo nix-channel --update && sudo nixos-rebuild switch";
+      nixh="sudo nvim /home/sam/.config/nix/home.nix && sudo nixos-rebuild switch --flake /home/sam/.config/nix";
 
       firmware-menu="sudo systemctl reboot --firmware-setup";
     };
