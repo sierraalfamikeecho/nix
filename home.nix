@@ -39,7 +39,7 @@ programs.bash  = {
       };
 
       core.editor = "nvim";
-    };
+  };
   };
 programs.hyprlock = {
     enable = true;
@@ -69,44 +69,7 @@ programs.hyprlock = {
       font-family = "VictorMono Nerd Font";
     };
   };
-  
-  programs.alacritty = {
-    enable = true;
-    theme = "base16_default_dark";
-    settings = {
-
-      font = {
-      normal = {
-        family = "VictorMono Nerd Font";
-        style = "medium";
-      };
-      size = 16;
-      };
-
-      window = {
-        opacity = 0.98;
-        blur = true;
-      };      
-    };
-  };
-
-  programs.neovim = {
-  defaultEditor = true;
-  coc.enable = true;
-  plugins = with pkgs.vimPlugins; [
-  vim-nix
-  fugitive
-  nvim-cmp
-  luasnip
-  lualine-nvim
-  ];
-
-  viAlias = true;
-  vimAlias = true;
-  vimdiffAlias = true;
-
-  };
-  programs.zed-editor = {
+   programs.zed-editor = {
     enable = true;
     extensions = [ "Nix" "Verilog" "Astro" "probe-rs" "base16" "Make" "GDScript" ];
     installRemoteServer = true;

@@ -4,6 +4,10 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
 
+    nvf = {
+    	url = "github:NotAShelf/nvf";
+	inputs.nixpkgs.follows = "nixpkgs";
+    };
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -12,13 +16,10 @@
       url = "github:DreamMaoMao/mango";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+  };
 
-    nixvim = {
-    	url = "github:nix-community/nixvim";
-    };
-   };
 
-  outputs = { self, nixpkgs, mango, home-manager, nixvim}: {
+  outputs = { self, nixpkgs, mango, home-manager, nvf}: {
     nixosConfigurations.roosevelt = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
@@ -31,6 +32,7 @@
             backupFileExtension = "backup";
           };
         }
+	nvf.nixosModules.default
         mango.nixosModules.mango {
           programs.mango.enable = true;
         }
