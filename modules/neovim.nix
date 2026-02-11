@@ -4,12 +4,18 @@
     settings = {
       vim.viAlias = true;
       vim.vimAlias = true;
+      vim.globals.mapleader = "t";
       vim.lsp = {
         enable = true;
         formatOnSave = true;
         lightbulb.enable = true;
         lspkind.enable = false;
         lspsaga.enable = false;
+        harper-ls.enable = true;
+        lspSignature.enable = true;
+      };
+      vim.spellcheck = {
+        enable = true;
       };
       vim.debugger = {
         nvim-dap = {
@@ -36,7 +42,6 @@
           dap.enable = true;
           treesitter.enable = true;
         };
-
         python = {
           enable = true;
           lsp.enable = true;
@@ -54,24 +59,26 @@
           lsp.enable = true;
           treesitter.enable = true;
         };
-        astro = {
-          enable = true;
-          lsp.enable = true;
-          treesitter.enable = true;
-        };
-        bash = {
-          enable = true;
-          lsp.enable = true;
-          treesitter.enable = true;
-        };
-        make = {
-          enable = true;
-        };
+        assembly.enable = true;
+        lua.enable = true;
+        typst.enable = true;
+        json.enable = true;
+        haskell.enable = true;
+        astro.enable = true;
+        bash.enable = true;
+        make.enable = true;
       };
       vim.autocomplete = {
         nvim-cmp.enable = true;
       };
+      vim.snippets.luasnip.enable = true;
+      vim.autopairs.nvim-autopairs.enable = true;
 
+      vim.ui = {
+        borders.enable = false;
+        colorizer.enable = true;
+        illuminate.enable = true;
+      };
       vim.theme = {
         enable = true;
         name = "base16";

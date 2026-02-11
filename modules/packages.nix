@@ -60,4 +60,11 @@
     koruri
     evil-helix
   ];
+
+  fonts.packages = with pkgs; [
+    nerd-fonts.victor-mono
+    nerd-fonts.ubuntu-sans
+    noto-fonts-cjk-sans
+    nerd-fonts.caskaydia-cove
+  ];
 }
