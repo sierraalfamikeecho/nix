@@ -2,8 +2,7 @@
   config,
   pkgs,
   ...
-}:
-{
+}: {
   services.ollama = {
     enable = true;
     package = pkgs.ollama-cuda;
@@ -18,6 +17,13 @@
   services.open-webui = {
     enable = true;
   };
+  services.caddy = {
+    enable = true;
+    virtualHosts."roosevelt.bream-pike.ts.net".extraConfig = ''
+      reverse_proxy 127.0.0.1:8080
+    '';
+  };
+  services.tailscale.permitCertUid = "caddy";
 
   programs.steam = {
     enable = true;
@@ -41,7 +47,7 @@
 
   services.openssh = {
     enable = true;
-    ports = [ 22 ];
+    ports = [22];
     settings = {
       PasswordAuthentication = true;
       AllowUsers = null; # Allows all users by default. Can be [ "user1" "user2" ]
