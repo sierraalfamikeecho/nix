@@ -91,7 +91,7 @@
 
   networking.firewall = {
     enable = true;
-    allowedTCPPorts = [80 443 8080];
+    allowedTCPPorts = [80 443 8080 11434];
     allowedTCPPortRanges = [
       {
         from = 1714;

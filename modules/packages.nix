@@ -52,6 +52,8 @@
     sigrok-cli
     nix-direnv
     direnv
+    tailscale
+    just
   ];
 
   fonts.packages = with pkgs; [

@@ -8,7 +8,7 @@
     installVimSyntax = true;
     enableBashIntegration = true;
     settings = {
-      background-opacity = 0.9;
+      background-opacity = 0.99;
       background-blur = true;
       theme = "Tomorrow Night Bright";
       font-size = 18;
