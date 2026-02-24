@@ -54,7 +54,12 @@
     direnv
     tailscale
     just
+    kdePackages.kdeconnect-kde
   ];
+
+  programs.kdeconnect = {
+    enable = true;
+  };
 
   fonts.packages = with pkgs; [
     nerd-fonts.victor-mono
