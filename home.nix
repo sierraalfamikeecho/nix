@@ -69,16 +69,12 @@
     enable = true;
     systemd.enable = true;
   };
-
-  services.wpaperd = {
+  services.swww = {
     enable = true;
-    settings = {
-      any = {
-        path = "home/sam/Downloads/denys-nevozhai-j8Bc4UerZXY-unsplash.jpg";
-      };
-    };
+    extraArgs = [
+      "img ./nebula.jpg"
+    ];
   };
-
   programs.anki = {
     enable = true;
     minimalistMode = true;
@@ -114,6 +110,11 @@
     enable = true;
     cycle = true;
     font = "VictorMono Nerd Font 18";
+    plugins = with pkgs; [
+      rofi-calc
+      rofi-obsidian
+      rofi-bluetooth
+    ];
   };
 
   services.playerctld = {
