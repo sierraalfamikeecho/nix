@@ -9,7 +9,7 @@
         keyboard-focus = "on-demand";
         terminal = "ghostty -e {cmd}";
         auto-select = "yes";
-        width = 160;
+        width = 64;
       };
       border = {
         width = 0;

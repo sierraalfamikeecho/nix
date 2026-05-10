@@ -6,13 +6,11 @@ rebuild:
 
 edit:
         sudo {{ EDITOR }}
-        just rebuild
         just commit
 
 commit:
         just rebuild
         git commit
-        git push
 
 update:
         nix-channel --update
