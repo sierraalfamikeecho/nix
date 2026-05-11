@@ -18,10 +18,6 @@
     brave
     steam-run
     gh
-    rofi
-    rofi-obsidian
-    rofi-bluetooth
-    rofi-calc
     fzf
     zathura
     gimp
@@ -41,8 +37,6 @@
     gammastep
     ungoogled-chromium
     lm_sensors
-    libsigrok
-    sigrok-cli
     nix-direnv
     direnv
     tailscale
@@ -60,6 +54,7 @@
     qalculate-gtk
     grim
     flameshot
+    comma
   ];
   fonts.packages = with pkgs; [
     nerd-fonts.victor-mono
