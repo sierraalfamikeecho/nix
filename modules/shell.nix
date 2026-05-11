@@ -18,6 +18,7 @@
       ls = "eza -la";
       cat = "bat";
       cd = "z";
+      btop = "sudo btop";
     };
     interactiveShellInit = ''
       set fish_greeting
