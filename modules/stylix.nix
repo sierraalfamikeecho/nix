@@ -2,7 +2,7 @@
   stylix = {
     enable = true;
 
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/evenok-dark.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/tomorrow-night.yaml";
 
     fonts = {
       serif = {
@@ -21,7 +21,7 @@
       };
 
       sizes = {
-        desktop = 14;
+        desktop = 16;
         terminal = 18;
         applications = 14;
       };
