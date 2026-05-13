@@ -9,7 +9,7 @@
     enableFishIntegration = true;
     enableBashIntegration = true;
     settings = {
-      background-opacity = 0.9;
+      background-opacity = 1;
       background-blur = true;
       cursor-style-blink = true;
       theme = "Kanagawa Dragon";
