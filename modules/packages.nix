@@ -18,11 +18,11 @@
     brave
     steam-run
     gh
+    gitui
     fzf
     zathura
     gimp
     davinci-resolve
-    tenacity
     obs-studio
     obsidian
     ghostty
@@ -42,7 +42,6 @@
     tailscale
     just
     svls
-    kdePackages.dolphin
     xournalpp
     gnumake
     waypaper
@@ -51,10 +50,16 @@
     mozc
     eza
     bat
-    qalculate-gtk
     grim
     flameshot
     comma
+    pavolctld
+    nix-ld
+    nh
+    yazi
+    oterm
+    llama-cpp
+    nvtopPackages.nvidia
   ];
   fonts.packages = with pkgs; [
     nerd-fonts.victor-mono

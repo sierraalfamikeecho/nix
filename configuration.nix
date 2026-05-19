@@ -14,6 +14,7 @@
     ./modules/networking.nix
     ./modules/fcitx.nix
     ./modules/stylix.nix
+    ./modules/ai.nix
   ];
 
   boot.loader.systemd-boot = {

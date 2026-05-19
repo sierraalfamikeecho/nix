@@ -18,7 +18,6 @@
       tmux-fzf
       yank
       pass
-      catppuccin
     ];
   };
 }

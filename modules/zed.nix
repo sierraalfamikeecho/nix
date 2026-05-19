@@ -22,7 +22,7 @@
       };
       hour_format = "hour24";
       vim_mode = true;
-      disable_ai = true;
+      disable_ai = false;
       # buffer_font_size = 17;
       # buffer_font_family = "Lilex Nerd Font Mono";
       # ui_font_family = "IBM Plex Sans";

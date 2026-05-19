@@ -6,6 +6,10 @@ rebuild:
 
 edit:
         sudo {{ EDITOR }}
+        just rebuild
+
+modify:
+        sudo {{ EDITOR }}
         just commit
 
 commit:
@@ -14,4 +18,5 @@ commit:
 
 update:
         nix-channel --update
+        sudo nix flake update
         just rebuild
